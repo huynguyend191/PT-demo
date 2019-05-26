@@ -43,7 +43,8 @@ class Trainers extends Component {
         method: "Direct Personal Trainer",
         rating: 4.8,
         location: "Connecticut, Hoa Kỳ",
-        price: "6000$/ 48 days"
+        price: "6000$/ 48 days",
+        time: "Mon - Fri: 9am - 7pm"
       }, 
       {
         id: "2",
@@ -52,7 +53,8 @@ class Trainers extends Component {
         method: "Direct Personal Trainer",
         rating: 4.8,
         location: "Phoenix, Arizona",
-        price: "2000$/ 48 days"
+        price: "2000$/ 48 days",
+        time: "Fri - Sun: 7am - 9pm"
       }, 
       {
         id: "3",
@@ -61,7 +63,18 @@ class Trainers extends Component {
         method: "Online Personal Trainer",
         rating: 4.6,
         location: "Hà Nội, Việt Nam",
-        price: "5.500.000 VND/ 48 days"
+        price: "5.500.000 VND/ 48 days",
+        time: "Mon - Sat: 6am - 6pm"
+      }, 
+      {
+        id: "4",
+        name: "Maik Berger - 38 y/o",
+        img: "https://livbyaia.com/media/images/2017/11/pt-aia-9august-2017-ls-1-b23c07c79f8896e0e6518f1c928abedf.jpg",
+        method: "Personal Trainer",
+        rating: 4.3,
+        location: "Hồ Chí Minh, Việt Nam",
+        price: "6.500.000 VND/ 30 days",
+        time: "Mon - Sat: 6am - 9pm"
       }, 
     ]
     return (
@@ -119,6 +132,7 @@ class Trainers extends Component {
                 <Text>{item.location}</Text>
                 <Text>{item.rating}</Text>
                 <Text>{item.price}</Text>
+                <Text>{item.time}</Text>
               <Button title="Follow" color="orange" onPress={this.onSelectTrainer}/>
               </View>
             </View>
@@ -212,7 +226,7 @@ const styles = StyleSheet.create({
   },
   trainerProfile: {
     width: 350,
-    height: 155,
+    height: 160,
     borderWidth: 2,
     borderColor: 'orange',
     display: 'flex',
