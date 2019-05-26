@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import TraineeNavigation from './components/Navigations/TraineeNavigation';
 import SignIn from './components/Authentication/SignIn';
+import TrainerNavigation from './components/Navigations/TrainerNavigation';
 console.disableYellowBox = true;
 
 export default class App extends React.Component {
@@ -22,6 +23,8 @@ export default class App extends React.Component {
       const user =  this.state.user;
       if (user === 'trainee') {
         display = <TraineeNavigation />
+      } else if (user === 'trainer') {
+        display = <TrainerNavigation />
       }
     }
     return (

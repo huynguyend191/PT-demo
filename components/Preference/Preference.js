@@ -5,7 +5,6 @@ class Preference extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Setup Profile</Text>
         <Text>Training Schedule</Text>
         <Text>Manage Following/ Follower</Text>
         <Text>Subscribe to Gold member</Text>

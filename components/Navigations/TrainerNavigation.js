@@ -1,15 +1,15 @@
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React, {Component} from 'react';
-import Trainers from '../Trainers/Trainers';
+import Profile from '../TrainerProfile/Profile';
 import GymCenters from '../GymCenters/GymCenters';
-import Following from '../Following/Following';
 import Preference from '../Preference/Preference';
+import Contact from '../Contact/Contact';
 
-export const TraineeNavigation = createAppContainer(createBottomTabNavigator({
-  "Trainers": Trainers,
+export const TrainerNavigation = createAppContainer(createBottomTabNavigator({
+  "Profile": Profile,
   "Gym Centers": GymCenters,
-  "Following": Following,
+  "Contact": Contact,
   "Preference": Preference
 },
 {
@@ -18,11 +18,11 @@ export const TraineeNavigation = createAppContainer(createBottomTabNavigator({
       const { routeName } = navigation.state;
       let IconComponent = MaterialCommunityIcons;
       let iconName;
-      if (routeName === 'Trainers') {
-        iconName = `dumbbell`;
+      if (routeName === 'Profile') {
+        iconName = `account`;
       } else if (routeName === 'Gym Centers') {
         iconName = `map-marker-radius`;
-      } else if (routeName === 'Following') {
+      } else if (routeName === 'Contact') {
         iconName = 'account-group'
       }
       else if (routeName === 'Preference') {
@@ -37,3 +37,6 @@ export const TraineeNavigation = createAppContainer(createBottomTabNavigator({
   },
 }
 ));
+
+
+export default TrainerNavigation;
