@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {Text, View, StyleSheet}  from 'react-native';
 
-class Preference extends Component {
+class TrainerPreference extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Training Schedule</Text>
-        <Text>Manage Following/ Follower</Text>
-        <Text>Subscribe to Gold member</Text>
+        <Text style={styles.text}>Manage Following/ Follower</Text>
+        <Text style={styles.text}>Subscribe to membership</Text>
+        <Text style={styles.text}>Notification setting</Text>
       </View>
     );
   }
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Preference;
+export default TrainerPreference;

@@ -3,10 +3,10 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React, {Component} from 'react';
 import Profile from '../TrainerProfile/Profile';
 import GymCenters from '../GymCenters/GymCenters';
-import Preference from '../Preference/Preference';
+import Preference from '../Preference/TrainerPreference';
 import Contact from '../Contact/Contact';
 
-export const TrainerNavigation = createAppContainer(createBottomTabNavigator({
+const TrainerNavigation = createAppContainer(createBottomTabNavigator({
   "Profile": Profile,
   "Gym Centers": GymCenters,
   "Contact": Contact,

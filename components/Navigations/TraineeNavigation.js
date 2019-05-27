@@ -4,9 +4,9 @@ import React, {Component} from 'react';
 import Trainers from '../Trainers/Trainers';
 import GymCenters from '../GymCenters/GymCenters';
 import Following from '../Following/Following';
-import Preference from '../Preference/Preference';
+import Preference from '../Preference/TraineePreference';
 
-export const TraineeNavigation = createAppContainer(createBottomTabNavigator({
+const TraineeNavigation = createAppContainer(createBottomTabNavigator({
   "Trainers": Trainers,
   "Gym Centers": GymCenters,
   "Following": Following,
@@ -37,3 +37,6 @@ export const TraineeNavigation = createAppContainer(createBottomTabNavigator({
   },
 }
 ));
+
+export default TraineeNavigation;
+
