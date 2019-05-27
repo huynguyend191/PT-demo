@@ -29,7 +29,6 @@ class SignIn extends Component {
             }>
             <Picker.Item label="Trainee" value="trainee" />
             <Picker.Item label="Trainer" value="trainer" />
-            <Picker.Item label="Gym center" value="gymcenter" />
           </Picker>
         </View>
         <Button title="Join Now" color="orange" onPress={this.onSignIn}/>

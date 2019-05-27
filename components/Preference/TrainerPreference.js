@@ -17,7 +17,16 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingVertical: 30,
+    paddingHorizontal: 10,
+  },
+  text: {
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 10,
+    alignSelf: 'center'
   }
 })
 
